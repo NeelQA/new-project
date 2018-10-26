@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "End to end tests for the sample project",
   "main": "index.js",
-  "repository": "https://github.com/NeelQA/POC-Protractor-E2E.git",
   "author": "Neel",
   "license": "ISC",
   "scripts": {
