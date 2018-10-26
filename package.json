@@ -1,0 +1,38 @@
+{
+  "name": "poc-protractor-e2e",
+  "version": "1.0.0",
+  "description": "End to end tests for the sample project",
+  "main": "index.js",
+  "repository": "https://github.com/NeelQA/POC-Protractor-E2E.git",
+  "author": "Neel",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rimraf dist && rimraf reports",
+    "lint": "tslint --force --format verbose --project ./tsconfig.json",
+    "build": "yarn run clean && echo Running TypeScript compiler && tsc && yarn run lint",
+    "build-and-run": "yarn run build && protractor",
+    "start": "rimraf reports/tests && cross-env JUNIT_REPORT_NAME=e2e JUNIT_REPORT_PATH=reports/tests/results.xml yarn run build-and-run -- dist/protractor.conf.js",
+    "start-local": "yarn run build-and-run -- dist/protractor.conf.local.js"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^2.43.0",
+    "cross-env": "^5.2.0",
+    "mocha": "^5.2.0",
+    "mocha-jenkins-reporter": "^0.4.1",
+    "protractor": "^5.4.1",
+    "rimraf": "^2.6.2",
+    "testability-browser-bindings": "^1.2.2",
+    "testability.js": "^0.3.1",
+    "tslint": "^5.11.0",
+    "typescript": "~2.6.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.6",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.0",
+    "ncp": "^2.0.0"
+  }
+}
