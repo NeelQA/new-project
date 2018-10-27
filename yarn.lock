@@ -969,6 +969,14 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
   integrity sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
 
+protractor-testability-plugin@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/protractor-testability-plugin/-/protractor-testability-plugin-1.2.0.tgz#41b9cf8ca417267185322953b41afe467f6164ca"
+  integrity sha1-QbnPjKQXJnGFMilTtBr+Rn9hZMo=
+  dependencies:
+    testability-browser-bindings "1.x"
+    testability.js "0.x"
+
 protractor@^5.4.1:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/protractor/-/protractor-5.4.1.tgz#011a99e38df7aa45d22455b889ffbb13a6ce0bd9"
@@ -1200,14 +1208,14 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-testability-browser-bindings@^1.2.2:
+testability-browser-bindings@1.x:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/testability-browser-bindings/-/testability-browser-bindings-1.2.2.tgz#0cce505859e202197c212c67025e8aab20c42258"
   integrity sha512-LA9G2mN2c5PRBQLLNpPbnpd18v+CiUYI1lp7AcdDPIeaoqgqVMUugrbZ41ll3ktdJ//nG0XsRnQ0dzBZTOy+xw==
   dependencies:
     testability.js "^0.3.0"
 
-testability.js@^0.3.0, testability.js@^0.3.1:
+testability.js@0.x, testability.js@^0.3.0:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/testability.js/-/testability.js-0.3.1.tgz#3087b89304678b8c5d51cd90071ebe047a256bdd"
   integrity sha1-MIe4kwRni4xdUc2QBx6+BHola90=

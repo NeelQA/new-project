@@ -21,9 +21,8 @@
     "mocha": "^5.2.0",
     "mocha-jenkins-reporter": "^0.4.1",
     "protractor": "^5.4.1",
+    "protractor-testability-plugin": "^1.2.0",
     "rimraf": "^2.6.2",
-    "testability-browser-bindings": "^1.2.2",
-    "testability.js": "^0.3.1",
     "tslint": "^5.11.0",
     "typescript": "~2.6.2"
   },
