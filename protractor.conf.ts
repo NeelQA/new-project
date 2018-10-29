@@ -24,10 +24,11 @@ export const config: Config = {
     mochaOpts: {
         reporter: "mocha-jenkins-reporter",
         slow: 2000,
-        timeout: 12000,
+        timeout: 12000000,
     },
 
     plugins: [
-        { path: "./plugins/sync.js" },
+        { path: "./plugins/sync.js" ,
+        package: "protractor-testability-plugin"},
     ],
 };
