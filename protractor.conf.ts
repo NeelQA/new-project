@@ -28,7 +28,9 @@ export const config: Config = {
     },
 
     plugins: [
-        { path: "./plugins/sync.js" ,
-        package: "protractor-testability-plugin"},
+        {
+            path: "./plugins/sync.js",
+            package: "protractor-testability-plugin",
+        },
     ],
 };
